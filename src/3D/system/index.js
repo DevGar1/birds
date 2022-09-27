@@ -18,8 +18,9 @@ const geometry = new BoxGeometry(3, 3, 3);
 const material = new MeshStandardMaterial({ color: "red" });
 
 const createCamera = (width, height) => {
-  const camera = new PerspectiveCamera(55, width / height, 0.1, 300);
-  camera.position.z = 10;
+  const camera = new PerspectiveCamera(55, width / height, 0.1, 1000);
+  camera.position.z = 235;
+  camera.position.y = 32;
 
   return camera;
 };
